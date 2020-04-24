@@ -8,7 +8,7 @@ export function localeFromString(str: string, locales: Array<string>) {
     if (locale === str) {
       exactMatch = locale
       break
-    } else if (str.startsWith(locale))
+    } else if (str.startsWith(locale)) {
       partialMatch = locale
     }
   }
@@ -20,7 +20,10 @@ export function localeFromString(str: string, locales: Array<string>) {
   return partialMatch
 }
 
-export function localeFromRequest(req: IncomingMessage, locales: Array<string>) {
+export function localeFromRequest(
+  req: IncomingMessage,
+  locales: Array<string>
+) {
   return localeFromString(req.headers['accept-language'], locales)
 }
 
