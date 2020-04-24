@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <i>Redirect to any URL in NextJS both in client and server</i>
+  <i>Redirect to corresponding locale. Works on client and server.</i>
 </p>
 
 ## Install
@@ -18,23 +18,25 @@ npm install nextjs-redirect-locale
 
 ## Usage
 
-Let's say you want to create a page `/donate` that redirects the user to paypal.me with a default value for the money. You create the page as you always do in NextJS (`pages/donate.js`) and then just use this component with the URL you want:
+Let's say you have a next.js project ([like this one](https://github.com/pablopunk/pablo.pink)) that creates one route per locale automatically, i.e. a page like `page/home.js` will be available in different languages with the following routes:
 
-```js
-// pages/donate.js
-import redirect from 'nextjs-redirect-locale'
-export default redirect('https://paypal.me/pablopunk/5')
+* `/en/home`
+* `/es/home`
+* `/gl/home`
+* `/fr/home`
+* `/fr_CA/home`
+
+If you want to redirect to the proper locale once the user visits `/`, then you can create a `pages/index.js` with the following code:
+
+```jsx
+import redirectLocale from 'nextjs-redirect-locale'
+export default redirectLocale(['en', 'es', 'gl', 'fr', 'fr_CA'])
 ```
 
-You can checkout this example live in [pablo.pink](https://pablo.pink)
+Keep in mind the first locale is gonna be the default (i.e. the one that gets selected if the user locale is not on the list).
 
-### Status code (301, 302...)
+You can checkout this example live in [pablo.pink](https://pablo.pink/)
 
-By default, it will send a [301 status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_Redirection). This can be customized by an optional parameter:
-
-```js
-redirect('https://google.es', 302)
-```
 
 ## License
 

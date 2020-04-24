@@ -1,7 +1,7 @@
 {
   "name": "nextjs-redirect-locale",
-  "description": "Redirect to any URL in NextJS both in client and server",
-  "version": "2.0.1",
+  "description": "Redirect to corresponding locale folder",
+  "version": "1.0.0",
   "author": "Pablo Varela <pablovarela182@gmail.com>",
   "bugs": {
     "url": "https://github.com/pablopunk/nextjs-redirect-locale/issues",

@@ -1,13 +1,20 @@
 import React from 'react'
 import Router from 'next/router'
+import { localeFromBrowser, localeFromRequest } from './locales'
 
-export default (redirectUrl: string, statusCode = 301) =>
+export default (locales: Array<string>) =>
   class extends React.Component {
-    static async getInitialProps({ res }) {
+    static async getInitialProps({ req, res }) {
       if (res) {
-        res.writeHead(statusCode, { Location: redirectUrl })
+        const locale = localeFromRequest(req, locales)
+        const redirectUrl = '/' + locale
+
+        res.writeHead(302, { Location: redirectUrl })
         res.end()
       } else {
+        const locale = localeFromBrowser(locales)
+        const redirectUrl = '/' + locale
+
         Router.push(redirectUrl)
       }
 
