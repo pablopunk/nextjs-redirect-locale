@@ -39,6 +39,9 @@ Keep in mind the first locale is gonna be the default (i.e. the one that gets se
 
 You can checkout this example live in [pablo.pink](https://pablo.pink/)
 
+## Related
+
+* Custom redirects for NextJS: [nextjs-redirect](https://github.com/pablopunk/nextjs-redirect)
 
 ## License
 
