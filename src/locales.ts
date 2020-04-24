@@ -4,7 +4,7 @@ export function localeFromString(str: string, locales: Array<string>) {
   let partialMatch = locales[0]
   let exactMatch = null
 
-  for (const locale in locales) {
+  for (const locale of locales) {
     if (locale === str) {
       exactMatch = locale
       break
