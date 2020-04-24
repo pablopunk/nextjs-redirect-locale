@@ -1,0 +1,61 @@
+{
+  "name": "nextjs-redirect-locale",
+  "description": "Redirect to any URL in NextJS both in client and server",
+  "version": "2.0.1",
+  "author": "Pablo Varela <pablovarela182@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/pablopunk/nextjs-redirect-locale/issues",
+    "email": "pablovarela182@gmail.com"
+  },
+  "contributors": [
+    "Pablo Varela <pablovarela182@gmail.com>"
+  ],
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "next": "*"
+  },
+  "devDependencies": {
+    "husky": "*",
+    "prettier": "*",
+    "pretty-quick": "*",
+    "sucrase": "^3.10.1"
+  },
+  "homepage": "https://github.com/pablopunk/nextjs-redirect-locale",
+  "keywords": [
+    "nextjs",
+    "redirect",
+    "zeit",
+    "react",
+    "component",
+    "automatic",
+    "simple",
+    "url",
+    "302"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "./typings.d.ts",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pablopunk/nextjs-redirect-locale"
+  },
+  "scripts": {
+    "build": "sucrase src -d dist --transforms imports,typescript",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist/index.js",
+    "typings.d.ts"
+  ]
+}
