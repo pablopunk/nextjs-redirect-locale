@@ -1,7 +1,7 @@
 {
   "name": "nextjs-redirect-locale",
   "description": "Redirect to corresponding locale route",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Pablo Varela <pablovarela182@gmail.com>",
   "bugs": {
     "url": "https://github.com/pablopunk/nextjs-redirect-locale/issues",
