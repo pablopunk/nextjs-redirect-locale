@@ -17,10 +17,10 @@
   },
   "devDependencies": {
     "husky": "*",
-    "next": "^9.3.5",
+    "next": "*",
     "prettier": "*",
     "pretty-quick": "*",
-    "react": "^16.13.1",
+    "react": "*",
     "sucrase": "^3.10.1"
   },
   "homepage": "https://github.com/pablopunk/nextjs-redirect-locale",
