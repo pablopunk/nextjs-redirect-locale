@@ -33,6 +33,8 @@ import redirectLocale from 'nextjs-redirect-locale'
 export default redirectLocale(['en', 'es', 'gl', 'fr', 'fr_CA'])
 ```
 
+Result: `/` redirects to `/es/` (if user locale is `es`)
+
 Keep in mind the first locale is gonna be the default (i.e. the one that gets selected if the user locale is not on the list).
 
 You can checkout this example live in [pablo.pink](https://pablo.pink/)
