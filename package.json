@@ -16,6 +16,9 @@
     "react": "*"
   },
   "devDependencies": {
+    "@types/node": "^14.0.13",
+    "@types/react": "^16.9.36",
+    "dts-bundle-generator": "^4.3.0",
     "husky": "*",
     "next": "*",
     "prettier": "*",
@@ -53,8 +56,10 @@
     "url": "https://github.com/pablopunk/nextjs-redirect-locale"
   },
   "scripts": {
-    "build": "sucrase src -d dist --transforms imports,typescript",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "build": "sucrase src -d dist --transforms imports,typescript,jsx && npm run generate-types && npm run prettier",
+    "prettier": "prettier src/*.tsx ./typings.d.ts --write",
+    "generate-types": "dts-bundle-generator -o typings.d.ts src/index.tsx"
   },
   "files": [
     "dist/index.js",
