@@ -20,11 +20,11 @@ npm install nextjs-redirect-locale
 
 Let's say you have a next.js project ([like this one](https://github.com/pablopunk/pablo.pink)) that creates one route per locale automatically, i.e. a page like `page/home.js` will be available in different languages with the following routes:
 
-* `/en/home`
-* `/es/home`
-* `/gl/home`
-* `/fr/home`
-* `/fr_CA/home`
+- `/en/home`
+- `/es/home`
+- `/gl/home`
+- `/fr/home`
+- `/fr_CA/home`
 
 If you want to redirect to the proper locale once the user visits `/`, then you can create a `pages/index.js` with the following code:
 
@@ -39,9 +39,13 @@ Keep in mind the first locale is gonna be the default (i.e. the one that gets se
 
 You can checkout this example live in [pablo.pink](https://pablo.pink/)
 
+## Static export
+
+This package is compatible with static exports via `next export` since version 2.0.0
+
 ## Related
 
-* Custom redirects for NextJS: [nextjs-redirect](https://github.com/pablopunk/nextjs-redirect)
+- Custom redirects for NextJS: [nextjs-redirect](https://github.com/pablopunk/nextjs-redirect)
 
 ## License
 
