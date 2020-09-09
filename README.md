@@ -37,7 +37,9 @@ Result: `/` redirects to `/es/` (if user locale is `es`)
 
 Keep in mind the first locale is gonna be the default (i.e. the one that gets selected if the user locale is not on the list).
 
-You can checkout this example live in [pablo.im](https://pablo.im/)
+You can checkout this example live in [pablo.im](https://pablo.im/).
+
+Also, here's a demo of the code you can play with: (codesandbox.io/s/nextjs-redirect-locale-ci)[https://codesandbox.io/s/nextjs-redirect-locale-ci-utjwg].
 
 ## Static export
 
