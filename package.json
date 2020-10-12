@@ -2,13 +2,13 @@
   "name": "nextjs-redirect-locale",
   "description": "Redirect to corresponding locale route",
   "version": "2.0.0",
-  "author": "Pablo Varela <pablo.com>",
+  "author": "Pablo Varela <pablo@pablopunk.com>",
   "bugs": {
     "url": "https://github.com/pablopunk/nextjs-redirect-locale/issues",
-    "email": "pablo.com"
+    "email": "pablo@pablopunk.com"
   },
   "contributors": [
-    "Pablo Varela <pablo.com>"
+    "Pablo Varela <pablo@pablopunk.com>"
   ],
   "dependencies": {},
   "peerDependencies": {
