@@ -10,6 +10,8 @@
   <i>Redirect to corresponding locale. Works on client and server.</i>
 </p>
 
+> Note: This project still works but there's now an official way of doing i18n in NextJS. [Check out the official docs](https://nextjs.org/docs/advanced-features/i18n-routing).
+
 ## Install
 
 ```sh
